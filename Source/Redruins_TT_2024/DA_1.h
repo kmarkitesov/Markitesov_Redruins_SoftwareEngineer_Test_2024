@@ -15,7 +15,7 @@ struct FDA1Struct
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UDA_2* DA2DataAsset;
+	TWeakObjectPtr<UDA_2> DA2DataAsset;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FName Name;

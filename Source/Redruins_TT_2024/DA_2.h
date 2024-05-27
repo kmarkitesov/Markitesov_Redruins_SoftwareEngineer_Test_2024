@@ -25,5 +25,5 @@ public:
 	EDA2Enum ValueEnum = EDA2Enum::Value_True;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (EditCondition = "ValueEnum == EDA2Enum::Value_True", EditConditionHides))
-    UDA_1* DA1DataAsset;
+    TWeakObjectPtr<UDA_1> DA1DataAsset;
 };
